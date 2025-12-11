@@ -110,5 +110,4 @@ let a=[
 ]
 ];
 let names=a.map(item=>item)
-let obj=JSON.parse(names)
-console.log(names);
+
