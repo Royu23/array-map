@@ -1,4 +1,4 @@
-let a=[
+const display=[
 
 
 [
@@ -109,5 +109,16 @@ let a=[
   }
 ]
 ];
-let names=a.map(item=>item)
 
+
+const fill=display.map(items=>{
+  return
+
+<div key={"items.id"}>
+  <a href="${items?.url}" >url</a>
+  <h1>${"items?.title"}</h1>
+  <a href="${items?.thumbnailUrl}">thumbnailUrl</a>
+  </div>
+  ;}).join("");
+
+document.getElementById("royu").innerHTML=fill;
